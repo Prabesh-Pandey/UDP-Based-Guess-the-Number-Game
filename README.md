@@ -55,11 +55,11 @@ gcc guess_client.c -o guess_client
 
 ### ✅ Server Terminal
 
-![Server Output](screenshots\Screenshot 2025-07-06 154059.png)
+![Server Output](screenshots/server.png)
 
 ### ✅ Client Terminal
 
-![Client Output](screenshots\Screenshot 2025-07-06 154117.png)
+![Client Output](screenshots/client.png)
 
 > These screenshots show the interaction where the client makes several guesses, and the server provides appropriate hints until the correct number (52) is guessed.
 
