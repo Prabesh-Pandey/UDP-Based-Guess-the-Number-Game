@@ -1,12 +1,12 @@
-# UDP-Based "Guess the Number" Game 🎯
+# UDP-Based "Guess the Number" Game 
 
-## 📌 Project Overview
+##  Project Overview
 
 This is a simple LAN-based multiplayer **"Guess the Number"** game implemented using **UDP sockets in C**. The server generates a random number, and clients try to guess it by sending guesses over the network. The server responds with hints ("Higher", "Lower", or "Correct") until the correct number is guessed.
 
 ---
 
-## 🖥️ Platform
+##  Platform
 
 - **Language:** C
 - **Networking:** BSD Sockets (UDP)
@@ -15,7 +15,7 @@ This is a simple LAN-based multiplayer **"Guess the Number"** game implemented u
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 .
@@ -26,7 +26,7 @@ This is a simple LAN-based multiplayer **"Guess the Number"** game implemented u
 
 ---
 
-## ⚙️ Build Instructions
+##  Build Instructions
 
 ```bash
 gcc guess_server.c -o guess_server
@@ -35,15 +35,15 @@ gcc guess_client.c -o guess_client
 
 ---
 
-## ▶️ Run Instructions
+##    Run Instructions
 
-### 🖥️ Start the Server
+###  Start the Server
 
 ```bash
 ./guess_server
 ```
 
-### 💻 Start the Client
+###  Start the Client
 
 ```bash
 ./guess_client
@@ -51,13 +51,13 @@ gcc guess_client.c -o guess_client
 
 ---
 
-## 🖼️ Example Output
+##  Example Output
 
-### ✅ Server Terminal
+###  Server Terminal
 
 ![Server Output](screenshots/server.png)
 
-### ✅ Client Terminal
+###  Client Terminal
 
 ![Client Output](screenshots/client.png)
 
@@ -65,14 +65,14 @@ gcc guess_client.c -o guess_client
 
 ---
 
-## 🌐 Networking Notes
+##  Networking Notes
 
 - Communicates over **UDP on port 12345**
 - Defaults to `127.0.0.1` (localhost). Change `SERVER_IP` in `guess_client.c` to connect across machines on the same LAN.
 
 ---
 
-## ✅ Features
+##  Features
 
 - Random number generation
 - Terminal-based client-server interaction
@@ -80,7 +80,7 @@ gcc guess_client.c -o guess_client
 
 ---
 
-## 🛠️ Troubleshooting
+##  Troubleshooting
 
 - Ensure the server is running before the client
 - If testing on LAN, allow UDP on port 12345
